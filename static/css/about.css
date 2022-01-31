@@ -1,0 +1,15 @@
+section#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 44px 20px;
+}
+section#about h1{
+    margin: 0px;
+    font-size: 1.8rem;
+    color: red;
+    text-align: center;
+}
+section#about p{
+
+}

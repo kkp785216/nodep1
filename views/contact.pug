@@ -1,0 +1,16 @@
+extends base.pug
+
+block style
+    link(rel='stylesheet', href='../static/css/contact.css')
+
+block content
+    section#form
+        h1 Contact Us
+        p Email Us: #[a(href="mail:kkp785216@gmail.com") kkp785216@gmail.com] or Fill The Contact Form
+        form.container(action="/contact", method="post")
+            input(type="text", name="name" id="name", placeholder="Enter you name")
+            input(type="phone", name="phone", id="phone", placeholder="Enter your phone no.")
+            input(type="email", name="email", id="email", placeholder="Enter your email")
+            textarea(type="text", name="subject", id="subject", placeholder="Subject")
+            textarea(type="text", name="message", cols="30", rows="10" id="message", placeholder="Message")
+            button.btn Submit

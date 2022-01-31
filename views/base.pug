@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Krishna's Dance Academy
+    style
+    link(rel='stylesheet', href='../static/css/base.css')
+    block style
+
+  body
+
+    nav#navbar
+      ul.container
+        div#logo
+            img(src="../static/img/logo.png", alt="")
+            span K.D.A.
+        li #[a(href="/") Home]
+        li #[a(href="about") About]
+        li #[a(href="services") Services]
+        li #[a(href="/contact") Contact Us]
+
+    block content
+
+    footer
+        | Copyright #[a(href="#") Krishna's Dance Academy] Allright Reserved
+
+    block scripts
