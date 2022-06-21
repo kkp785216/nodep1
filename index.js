@@ -5,9 +5,7 @@ const port = process.env.PORT || 80;
 
 
 // EXPRESS SPECIFIC STUFF
-// app.use('/static', express.static('public')) // For serving static files
 app.use('/public', express.static('public')) // For serving static files
-// app.use(express.static('public'))
 
 // PUG SPECIFIC STUFF
 app.set('view engine', 'pug') // Set the template engine as pug
